@@ -1,0 +1,79 @@
+.bg-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url('https://checkify.com/wp-content/uploads/design-16x9-50.webp');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.App{
+  background-color: aliceblue;
+  margin-left: 10%;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.heading{
+  font-family: 'Courier New';
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px;
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  margin-left: 15px;
+  font-family: "Roboto";
+  font-size: large;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 8px;
+  color: antiquewhite;
+}
+
+input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid antiquewhite;
+  border-radius: 8px;
+  font-family: "Roboto";
+  cursor: text;
+  font-size: large;
+  font-weight: 900;
+  color: rgb(54, 51, 51);
+  outline: none;
+  padding-left: 10px;
+}
+
+.add{
+  background-color: rgb(11, 173, 237);
+}
+
+.delete{
+  background-color: rgb(224, 25, 25);
+}
+
+.complete{
+  background-color: green;
+}
+
+ul{
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid antiquewhite;
+  padding: 25px;
+}
+li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 10px;
+}
