@@ -17,6 +17,10 @@ function App(){
 
   const addTodo = async ()=>{
     const response = await axios.post("http://localhost:5000/newTodo",{title:newTodo});
+    if (newTodo === ""){
+      alert("Todo Item Can't be Empty!");
+      return;
+    }
     setTodos([...todos,response.data]);
     setNewTodo("");
   };
