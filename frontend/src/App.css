@@ -36,6 +36,7 @@ button{
   border: none;
   border-radius: 8px;
   color: antiquewhite;
+  cursor: pointer;
 }
 
 input{
@@ -76,4 +77,6 @@ li{
   justify-content: space-between;
   list-style-type: none;
   margin: 10px;
+  font-family: "Roboto";
+  font-size: 25px;
 }
