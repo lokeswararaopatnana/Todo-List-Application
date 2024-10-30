@@ -8,11 +8,21 @@
   height: 100vh;
   width: 100vw;
 }
+
 .App{
   background-color: aliceblue;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 25px;
   border-radius: 16px;
+  width: 750px;
+  height: auto;
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading{
@@ -37,6 +47,7 @@ button{
   border-radius: 8px;
   color: antiquewhite;
   cursor: pointer;
+  width: 150px;
 }
 
 input{
@@ -52,7 +63,10 @@ input{
   outline: none;
   padding-left: 10px;
 }
-
+p{
+  margin: 0px;
+  padding: 0px;
+}
 .add{
   background-color: rgb(11, 173, 237);
 }
@@ -79,4 +93,8 @@ li{
   margin: 10px;
   font-family: "Roboto";
   font-size: 25px;
+  background-color: rgb(219, 235, 230);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(110, 111, 113, 0.568);
 }

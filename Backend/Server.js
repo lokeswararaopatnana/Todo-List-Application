@@ -23,6 +23,9 @@ db.connect(error=>{
 // Post a new todo
 app.post("/newTodo",(request,response)=>{
     const {title} = request.body;
+    if (!title || title.trim() === ''){
+        return response.json({error:"Todo title cannot be empty!"})
+    }
     db.query("INSERT INTO todos (title) VALUES (?)",[title],(error,result)=>{
         if (error) throw error;
         response.json({id:result.insertId,title,completed:false});

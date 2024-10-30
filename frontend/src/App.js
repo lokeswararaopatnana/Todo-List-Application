@@ -17,7 +17,7 @@ function App(){
 
   const addTodo = async ()=>{
     const response = await axios.post("http://localhost:5000/newTodo",{title:newTodo});
-    if (newTodo === ""){
+    if (newTodo.trim() === ""){
       alert("Todo Item Can't be Empty!");
       return;
     }
@@ -46,9 +46,9 @@ function App(){
       </div>
       <ul>
       {todos.map(todo => (
-        <li key={todo.id} style={{textDecoration:todo.completed ? 'line-through':'none'}}>
-          {todo.title}
-          <div>
+        <li key={todo.id}>
+          <p style={{textDecoration:todo.completed ? 'line-through':'none'}}>{todo.title}</p>
+          <div className='buttons-container'>
           <button className='complete' onClick={()=> toggleTodo(todo.id,todo.completed)}>
             {todo.completed ? 'Undo':'Complete'}
           </button>
